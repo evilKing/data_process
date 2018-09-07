@@ -50,7 +50,7 @@ class Spelling_Corrector(object):
 spell_corr = Spelling_Corrector()
 
 if __name__ == '__main__':
-    f = spell_corr.suggest_word_spelling('vender')
+    f = spell_corr.suggest_word_spelling('acadamic')
     print(f)
 
     # f = spell_corr.is_word_spelling_corrector('he lo')
