@@ -43,18 +43,13 @@ def ftool():
     return lines
 
 if __name__ == '__main__':
-    text = '''I. Financial Management Data Collection and Analysis
-Collect financial data reasonably according to demands of operating management
-and provide financial data analysis for operating decisions made by the general
-manager; judge the cost-income ratio of key projects needing attention and offer
-suggestions for the general manager to take effective measures to guarantee
-profits gained from such projects.'''
+    text = '''Asynchronous and nested-parallel programming model for big data analytics, sponsored by NFS of Guangdong Province. 2'''
     token_by_pos(text)
     # token_by_ner(text)
     # token_by_extra_phrase(text)
 
-    for li, line in enumerate(ftool()):
-        sentence = []
-        for (token, pos, pos_) in token_by_pos_extract_v(line):
-            sentence.append((li, token, pos_))
-        print(sentence)
+    # for li, line in enumerate(ftool()):
+    #     sentence = []
+    #     for (token, pos, pos_) in token_by_pos_extract_v(line):
+    #         sentence.append((li, token, pos_))
+    #     print(sentence)
