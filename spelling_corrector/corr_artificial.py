@@ -63,10 +63,10 @@ def spell_by_artificail(lines, save_path):
             fw_err.flush()
             continue
 
-        # tran_pendings = [(i, pending, gtran.translate(pending)) for i, pending in enumerate(pendings)]
-        tran_pendings = [(i, pending, baidu_corr.translate(pending)) for i, pending in enumerate(pendings)]
+        tran_pendings = [(i, pending, gtran.translate(pending)) for i, pending in enumerate(pendings)]
+        # tran_pendings = [(i, pending, baidu_corr.translate(pending)) for i, pending in enumerate(pendings)]
 
-        print(li + start_index, line, baidu_corr.translate(line))
+        print(li + start_index, line, gtran.translate(line))
         print(tran_pendings)
 
         val = input()

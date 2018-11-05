@@ -32,6 +32,8 @@ class Baidu_Translator(object):
             return self.translate(raw_word)
 
         self.count = 0
+        if response.text is None:
+            return ''
         return json.loads(response.text)['trans'][0]['dst']
 
 baidu_corr = Baidu_Translator()
